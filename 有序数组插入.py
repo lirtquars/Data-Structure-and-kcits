@@ -24,7 +24,7 @@ class the_order_list:
             average = (left + right)/2
             if (element < iterable[average]):
                 right = average
-            elif (element == iterable[average]):
+            elif (element == iterable[average] or average == right):
                 iterable.insert(element,average)
             else:
                 left = average
